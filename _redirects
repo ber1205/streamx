@@ -1,0 +1,7 @@
+# Cloudflare Pages SPA redirects.
+#
+# Pages Functions (everything under /api/*) take precedence over these rules,
+# so API routes are unaffected and never fall through to the SPA shell.
+#
+# Route every non-file request to the React SPA for client-side routing.
+/*    /index.html   200

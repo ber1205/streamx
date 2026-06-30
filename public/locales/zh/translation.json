@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "features": "功能",
+    "platforms": "支持平台",
+    "pricing": "定价",
+    "docs": "文档",
+    "login": "登录",
+    "register": "注册",
+    "dashboard": "控制台",
+    "logout": "退出",
+    "credits": "积分"
+  },
+  "hero": {
+    "badge": "Cloudflare 边缘网络驱动",
+    "title": "解析全球音视频",
+    "titleHighlight": "一站下载，极致高清",
+    "subtitle": "新一代音视频内容提取平台，基于 Cloudflare 边缘计算网络，深度整合 yt-dlp 与 Lux 双引擎。覆盖 50+ 主流平台，支持 4K 超清，服务端零文件存储。",
+    "cta": "开始解析",
+    "ctaSecondary": "查看平台",
+    "placeholder": "粘贴视频或音频链接...",
+    "parseButton": "解析",
+    "supportedFormats": "YouTube / B站 / 抖音 / TikTok / 50+ 平台",
+    "credits": "当前积分",
+    "checkin": "签到 +10",
+    "topup": "充值"
+  },
+  "parser": {
+    "title": "解析结果",
+    "videoFormats": "视频格式",
+    "audioFormats": "仅音频",
+    "download": "立即下载",
+    "download4K": "下载 4K",
+    "mergeRequired": "本地合成",
+    "locked": "锁定",
+    "creditsNeeded": "{{count}} 积分",
+    "mergeTime": "约 {{minutes}} 分钟",
+    "duration": "时长",
+    "source": "来源",
+    "uploader": "上传者",
+    "publishedAt": "发布时间",
+    "parseAnother": "解析下一个",
+    "parsing": "解析中...",
+    "wakingUp": "正在唤醒解析服务，首次请求可能需要 20-30 秒...",
+    "mergeWarning": "本地合成中，请勿关闭或刷新页面",
+    "mergeProgress": "合成进度",
+    "insufficientCredits": "积分不足，本次操作需要 {{required}} 积分，当前余额：{{current}}",
+    "error": {
+      "invalidUrl": "请输入有效的链接",
+      "parseFailed": "解析失败，积分已退还",
+      "timeout": "解析超时，积分已退还，请稍后重试",
+      "unsupported": "暂不支持该平台",
+      "unavailable": "该内容不可用或已下架",
+      "loginRequired": "该内容需要平台登录后才可访问"
+    }
+  },
+  "platforms": {
+    "title": "支持的平台",
+    "subtitle": "差异化双引擎策略，智能路由分发，最大化覆盖与稳定性",
+    "tabs": {
+      "international": "国际平台",
+      "china": "国内平台",
+      "audio": "音频",
+      "dynamic": "动态网页"
+    },
+    "engineLabels": {
+      "ytdlp": "全球最强解析引擎，覆盖 1800+ 平台",
+      "lux": "国内特化引擎，在该平台解析稳定性更优",
+      "browser": "智能抓包，专为无公开API的动态网页设计",
+      "dual": "双引擎兜底，最大可靠性保障"
+    }
+  },
+  "features": {
+    "title": "为什么选择 StreamX",
+    "subtitle": "为创作者打造，前沿技术驱动"
+  },
+  "pricing": {
+    "title": "积分套餐",
+    "subtitle": "按需付费，无需订阅",
+    "popular": "推荐",
+    "bestValue": "最优惠",
+    "credits": "积分",
+    "buyNow": "立即购买",
+    "per100": "每 100 积分",
+    "firstBonus": "首次付费额外赠送 50 积分",
+    "freeUser": {
+      "title": "免费用户",
+      "features": [
+        "注册即送 100 积分",
+        "每日 20 次解析",
+        "最高 720p 画质",
+        "批量单次 3 个链接"
+      ]
+    },
+    "paidUser": {
+      "title": "付费功能",
+      "features": [
+        "4K 超高清下载",
+        "批量下载最多 50 个链接",
+        "ZIP 打包导出",
+        "优先解析通道",
+        "Cookie 导入解锁会员画质"
+      ]
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "欢迎回来",
+      "subtitle": "登录您的 StreamX 账户",
+      "email": "邮箱",
+      "password": "密码",
+      "forgotPassword": "忘记密码？",
+      "noAccount": "还没有账户？",
+      "signUp": "注册",
+      "submit": "登录"
+    },
+    "register": {
+      "title": "创建账户",
+      "subtitle": "加入 StreamX，获得 100 免费积分",
+      "email": "邮箱",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "haveAccount": "已有账户？",
+      "signIn": "登录",
+      "submit": "注册",
+      "passwordHint": "8位以上，包含大小写字母和数字"
+    },
+    "errors": {
+      "emailInvalid": "请输入有效的邮箱地址",
+      "passwordWeak": "密码需8位以上，包含大小写字母和数字",
+      "passwordMismatch": "两次密码输入不一致",
+      "emailExists": "该邮箱已注册",
+      "invalidCredentials": "邮箱或密码错误",
+      "emailNotVerified": "请先验证邮箱"
+    }
+  },
+  "footer": {
+    "tagline": "全球音视频智能解析下载平台",
+    "product": "产品",
+    "resources": "资源",
+    "company": "公司",
+    "about": "关于",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "apiDocs": "API 文档",
+    "status": "服务状态",
+    "copyright": "© 2025 StreamX. 保留所有权利。"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出错了",
+    "retry": "重试",
+    "close": "关闭",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "back": "返回",
+    "next": "下一步",
+    "language": "语言",
+    "theme": "主题",
+    "darkMode": "深色模式",
+    "lightMode": "浅色模式"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "features": "Features",
+    "platforms": "Platforms",
+    "pricing": "Pricing",
+    "docs": "Docs",
+    "login": "Login",
+    "register": "Sign Up",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "credits": "Credits"
+  },
+  "hero": {
+    "badge": "Powered by Cloudflare Edge Network",
+    "title": "Parse Global Audio & Video",
+    "titleHighlight": "Download in One Place",
+    "subtitle": "The next-generation media extraction platform built on Cloudflare's edge network. Deep integration with yt-dlp and Lux engines. 50+ platforms, 4K support, zero server storage.",
+    "cta": "Start Parsing",
+    "ctaSecondary": "View Platforms",
+    "placeholder": "Paste video or audio link here...",
+    "parseButton": "Parse",
+    "supportedFormats": "YouTube / Bilibili / TikTok / Douyin / 50+ platforms",
+    "credits": "Credits",
+    "checkin": "Check-in +10",
+    "topup": "Top Up"
+  },
+  "parser": {
+    "title": "Parse Result",
+    "videoFormats": "Video Formats",
+    "audioFormats": "Audio Only",
+    "download": "Download",
+    "download4K": "Download 4K",
+    "mergeRequired": "Local Merge",
+    "locked": "Locked",
+    "creditsNeeded": "{{count}} credits",
+    "mergeTime": "~{{minutes}} min",
+    "duration": "Duration",
+    "source": "Source",
+    "uploader": "Uploader",
+    "publishedAt": "Published",
+    "parseAnother": "Parse Another",
+    "parsing": "Parsing...",
+    "wakingUp": "Waking up parse service, first request may take 20-30s...",
+    "mergeWarning": "Local merge in progress, please do not close or refresh the page",
+    "mergeProgress": "Merge Progress",
+    "insufficientCredits": "Insufficient credits. This operation requires {{required}} credits, current balance: {{current}}",
+    "error": {
+      "invalidUrl": "Please enter a valid URL",
+      "parseFailed": "Parse failed. Credits have been refunded.",
+      "timeout": "Parse timed out. Credits have been refunded. Please try again.",
+      "unsupported": "This platform is not supported yet",
+      "unavailable": "This content is unavailable or has been removed",
+      "loginRequired": "This content requires platform login to access"
+    }
+  },
+  "platforms": {
+    "title": "Supported Platforms",
+    "subtitle": "Dual-engine strategy with intelligent routing for maximum coverage and reliability",
+    "tabs": {
+      "international": "International",
+      "china": "China",
+      "audio": "Audio",
+      "dynamic": "Dynamic Web"
+    },
+    "engineLabels": {
+      "ytdlp": "The world's most powerful parser, covering 1800+ platforms",
+      "lux": "China-optimized engine with superior stability for this platform",
+      "browser": "Smart capture via browser rendering for dynamic pages",
+      "dual": "Dual-engine fallback for maximum reliability"
+    }
+  },
+  "features": {
+    "title": "Why Choose StreamX",
+    "subtitle": "Built for creators, powered by cutting-edge technology"
+  },
+  "pricing": {
+    "title": "Credit Packages",
+    "subtitle": "Pay only for what you use. No subscriptions required.",
+    "popular": "Recommended",
+    "bestValue": "Best Value",
+    "credits": "credits",
+    "buyNow": "Buy Now",
+    "per100": "per 100 credits",
+    "firstBonus": "First purchase bonus: +50 credits",
+    "freeUser": {
+      "title": "Free Tier",
+      "features": [
+        "100 credits on registration",
+        "20 parses per day",
+        "Up to 720p quality",
+        "3 URLs per batch"
+      ]
+    },
+    "paidUser": {
+      "title": "Premium Features",
+      "features": [
+        "4K Ultra HD download",
+        "Batch download up to 50 URLs",
+        "ZIP export",
+        "Priority parsing channel",
+        "Cookie import for member content"
+      ]
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to your StreamX account",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "submit": "Sign In"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join StreamX and get 100 free credits",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "submit": "Create Account",
+      "passwordHint": "8+ characters with upper, lower, and number"
+    },
+    "errors": {
+      "emailInvalid": "Please enter a valid email",
+      "passwordWeak": "Password must be 8+ characters with upper, lower, and number",
+      "passwordMismatch": "Passwords do not match",
+      "emailExists": "This email is already registered",
+      "invalidCredentials": "Invalid email or password",
+      "emailNotVerified": "Please verify your email first"
+    }
+  },
+  "footer": {
+    "tagline": "Global audio/video smart parsing platform",
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "apiDocs": "API Docs",
+    "status": "Status",
+    "copyright": "© 2025 StreamX. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "back": "Back",
+    "next": "Next",
+    "language": "Language",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  }
+}

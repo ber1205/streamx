@@ -1,0 +1,43 @@
+# Cloudflare Pages / Workers configuration for StreamX.
+#
+# Deploy with:  npm run deploy   (== vite build + wrangler pages deploy dist)
+# Local dev:    npx wrangler pages dev dist --compatibility-date 2025-07-01
+#
+# NOTE: replace the placeholder database_id / KV ids below with the real ones
+# created via `wrangler d1 create streamx-db` and `wrangler kv namespace create`.
+
+name = "streamx"
+compatibility_date = "2025-07-01"
+pages_build_output_dir = "dist"
+
+# ─────────────────────────── D1 database ────────────────────────────
+[[d1_databases]]
+binding = "DB"
+database_name = "streamx-db"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
+
+# ─────────────────────────── KV namespaces ──────────────────────────
+# Response / rate-limit caching.
+[[kv_namespaces]]
+binding = "CACHE"
+id = "00000000000000000000000000000000"
+
+# Session & idempotency state.
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "00000000000000000000000000000001"
+
+# ────────────────────────────── vars ────────────────────────────────
+[vars]
+ENVIRONMENT = "development"
+# Secrets (set with `npx wrangler pages secret put <NAME>`):
+#   JWT_SECRET           — signing key for access tokens
+#   TURNSTILE_SECRET_KEY — Cloudflare Turnstile server secret
+
+# ────────────────────────── production env ──────────────────────────
+[env.production]
+name = "streamx"
+
+[env.production.vars]
+ENVIRONMENT = "production"
