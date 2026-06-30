@@ -10,8 +10,10 @@ export function Pricing() {
   const { i18n } = useTranslation()
   const lang = i18n.language === 'zh' ? 'zh' : 'en'
 
-  const freeFeatures = t('freeUser.features', { returnObjects: true }) as string[]
-  const paidFeatures = t('paidUser.features', { returnObjects: true }) as string[]
+  const freeFeatures = t('freeUser.features', { returnObjects: true, defaultValue: [] as string[] }) as string[]
+  const paidFeatures = t('paidUser.features', { returnObjects: true, defaultValue: [] as string[] }) as string[]
+  const safeFreeFeatures = Array.isArray(freeFeatures) ? freeFeatures : []
+  const safePaidFeatures = Array.isArray(paidFeatures) ? paidFeatures : []
 
   return (
     <section id="pricing" className="relative py-24 px-4 sm:px-6 lg:px-8">
@@ -39,7 +41,7 @@ export function Pricing() {
               </div>
             </div>
             <ul className="space-y-3">
-              {freeFeatures.map((feature, idx) => (
+              {safeFreeFeatures.map((feature, idx) => (
                 <li key={idx} className="flex items-center gap-3 text-sm text-text-secondary">
                   <div className="w-5 h-5 rounded-full bg-electric/10 flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-electric" />
@@ -69,7 +71,7 @@ export function Pricing() {
                 </div>
               </div>
               <ul className="space-y-3">
-                {paidFeatures.map((feature, idx) => (
+                {safePaidFeatures.map((feature, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-sm text-text-secondary">
                     <div className="w-5 h-5 rounded-full bg-success/10 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-success" />

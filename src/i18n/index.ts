@@ -1,5 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import en from '../../public/locales/en/translation.json'
+import zh from '../../public/locales/zh/translation.json'
 
 const savedLang = typeof localStorage !== 'undefined' ? localStorage.getItem('streamx-lang') : null
 const browserLang = typeof navigator !== 'undefined' ? navigator.language : 'en'
@@ -9,40 +11,32 @@ if (typeof localStorage !== 'undefined') {
   localStorage.setItem('streamx-lang', defaultLang)
 }
 
+const ns = ['common', 'nav', 'hero', 'parser', 'platforms', 'features', 'pricing', 'auth', 'footer']
+
+function buildResources(lang: typeof en) {
+  const resources: Record<string, unknown> = {}
+  for (const n of ns) {
+    resources[n] = lang[n]
+  }
+  return resources
+}
+
 i18n.use(initReactI18next).init({
   resources: {
-    en: {
-      translation: {},
-    },
-    zh: {
-      translation: {},
-    },
+    en: buildResources(en),
+    zh: buildResources(zh),
   },
   lng: defaultLang,
   fallbackLng: 'en',
+  defaultNS: 'common',
+  ns,
   interpolation: {
     escapeValue: false,
   },
+  react: {
+    useSuspense: false,
+  },
 })
-
-// Load translations dynamically
-const loadTranslations = async () => {
-  try {
-    const [enRes, zhRes] = await Promise.all([
-      fetch('/locales/en/translation.json'),
-      fetch('/locales/zh/translation.json'),
-    ])
-    const en = await enRes.json()
-    const zh = await zhRes.json()
-    i18n.addResourceBundle('en', 'translation', en, true, true)
-    i18n.addResourceBundle('zh', 'translation', zh, true, true)
-    i18n.changeLanguage(defaultLang)
-  } catch (e) {
-    console.error('Failed to load translations:', e)
-  }
-}
-
-loadTranslations()
 
 export const changeLanguage = (lang: string) => {
   i18n.changeLanguage(lang)

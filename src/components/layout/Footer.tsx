@@ -2,31 +2,32 @@ import { Zap, Code2, Send, Mail } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 export function Footer() {
-  const { t } = useTranslation('footer')
+  const { t: tf } = useTranslation('footer')
+  const { t: tn } = useTranslation('nav')
 
   const sections = [
     {
-      title: t('product'),
+      title: tf('product'),
       links: [
-        { label: t('nav.features' as never, { ns: 'nav' }) || 'Features', href: '#features' },
-        { label: t('nav.platforms' as never, { ns: 'nav' }) || 'Platforms', href: '#platforms' },
-        { label: t('nav.pricing' as never, { ns: 'nav' }) || 'Pricing', href: '#pricing' },
+        { label: tn('features'), href: '#features' },
+        { label: tn('platforms'), href: '#platforms' },
+        { label: tn('pricing'), href: '#pricing' },
       ],
     },
     {
-      title: t('resources'),
+      title: tf('resources'),
       links: [
-        { label: t('apiDocs'), href: '#' },
-        { label: t('status'), href: '#' },
+        { label: tf('apiDocs'), href: '#' },
+        { label: tf('status'), href: '#' },
       ],
     },
     {
-      title: t('company'),
+      title: tf('company'),
       links: [
-        { label: t('about'), href: '#' },
-        { label: t('contact'), href: '#' },
-        { label: t('privacy'), href: '#' },
-        { label: t('terms'), href: '#' },
+        { label: tf('about'), href: '#' },
+        { label: tf('contact'), href: '#' },
+        { label: tf('privacy'), href: '#' },
+        { label: tf('terms'), href: '#' },
       ],
     },
   ]
@@ -44,11 +45,11 @@ export function Footer() {
               </div>
               <span className="text-xl font-bold gradient-text-electric">StreamX</span>
             </div>
-            <p className="text-sm text-text-secondary mb-4">{t('tagline')}</p>
+            <p className="text-sm text-text-secondary mb-4">{tf('tagline')}</p>
             <div className="flex gap-3">
               {[
                 { icon: Code2, href: '#' },
-              { icon: Send, href: '#' },
+                { icon: Send, href: '#' },
                 { icon: Mail, href: '#' },
               ].map((social, i) => (
                 <a
@@ -83,7 +84,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-700/50 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-text-muted">{t('copyright')}</p>
+          <p className="text-sm text-text-muted">{tf('copyright')}</p>
           <div className="flex items-center gap-2 text-xs text-text-muted">
             <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
             All systems operational
