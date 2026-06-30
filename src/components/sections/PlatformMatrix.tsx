@@ -6,10 +6,10 @@ import { PLATFORMS, ENGINE_LABELS, type PlatformCategory } from '@/lib/constants
 import { cn } from '@/lib/utils'
 
 const CATEGORIES: { key: PlatformCategory; labelKey: string; icon: string }[] = [
-  { key: 'international', labelKey: 'platforms.tabs.international', icon: '🌍' },
-  { key: 'china', labelKey: 'platforms.tabs.china', icon: '🇨🇳' },
-  { key: 'audio', labelKey: 'platforms.tabs.audio', icon: '🎵' },
-  { key: 'dynamic', labelKey: 'platforms.tabs.dynamic', icon: '🌐' },
+  { key: 'international', labelKey: 'tabs.international', icon: '🌍' },
+  { key: 'china', labelKey: 'tabs.china', icon: '🇨🇳' },
+  { key: 'audio', labelKey: 'tabs.audio', icon: '🎵' },
+  { key: 'dynamic', labelKey: 'tabs.dynamic', icon: '🌐' },
 ]
 
 export function PlatformMatrix() {

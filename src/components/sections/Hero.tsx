@@ -176,7 +176,7 @@ export function Hero({ onOpenAuth, isAuthenticated, credits, onCreditsUpdate }: 
           <div className="glass px-4 py-2 rounded-full flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
             <Sparkles className="w-4 h-4 text-electric" />
-            <span className="text-sm text-text-secondary">{t('hero.badge')}</span>
+            <span className="text-sm text-text-secondary">{t('badge')}</span>
           </div>
         </motion.div>
 
@@ -187,9 +187,9 @@ export function Hero({ onOpenAuth, isAuthenticated, credits, onCreditsUpdate }: 
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-center text-5xl md:text-7xl font-bold tracking-tight mb-4 text-balance"
         >
-          <span className="text-text-primary">{t('hero.title')}</span>
+          <span className="text-text-primary">{t('title')}</span>
           <br />
-          <span className="gradient-text-electric">{t('hero.titleHighlight')}</span>
+          <span className="gradient-text-electric">{t('titleHighlight')}</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -199,7 +199,7 @@ export function Hero({ onOpenAuth, isAuthenticated, credits, onCreditsUpdate }: 
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-center text-base md:text-lg text-text-secondary max-w-2xl mx-auto mb-8 text-balance"
         >
-          {t('hero.subtitle')}
+          {t('subtitle')}
         </motion.p>
 
         {/* URL Input */}
@@ -221,7 +221,7 @@ export function Hero({ onOpenAuth, isAuthenticated, credits, onCreditsUpdate }: 
                   value={url}
                   onChange={(e) => { setUrl(e.target.value); setError('') }}
                   onKeyDown={(e) => e.key === 'Enter' && handleParse()}
-                  placeholder={t('hero.placeholder')}
+                  placeholder={t('placeholder')}
                   className="flex-1 bg-transparent border-none focus:outline-none text-text-primary placeholder:text-text-muted py-2"
                 />
               </div>
@@ -232,14 +232,14 @@ export function Hero({ onOpenAuth, isAuthenticated, credits, onCreditsUpdate }: 
                 className="shrink-0"
               >
                 {!loading && <Search className="w-5 h-5" />}
-                {t('hero.parseButton')}
+                {t('parseButton')}
               </Button>
             </div>
           </div>
 
           {/* Supported formats */}
           <div className="flex items-center justify-center gap-2 mt-4">
-            <p className="text-xs text-text-muted">{t('hero.supportedFormats')}</p>
+            <p className="text-xs text-text-muted">{t('supportedFormats')}</p>
           </div>
 
           {/* Credits bar */}
@@ -252,15 +252,15 @@ export function Hero({ onOpenAuth, isAuthenticated, credits, onCreditsUpdate }: 
             >
               <Badge variant="electric" className="px-4 py-2">
                 <Gem className="w-4 h-4" />
-                {t('hero.credits')}: {credits}
+                {t('credits')}: {credits}
               </Badge>
               <Button variant="outline" size="sm">
                 <Calendar className="w-4 h-4" />
-                {t('hero.checkin')}
+                {t('checkin')}
               </Button>
               <Button variant="outline" size="sm">
                 <Plus className="w-4 h-4" />
-                {t('hero.topup')}
+                {t('topup')}
               </Button>
             </motion.div>
           )}

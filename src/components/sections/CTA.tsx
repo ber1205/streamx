@@ -55,12 +55,12 @@ export function CTA() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="xl" className="group">
                 <Zap className="w-5 h-5" fill="white" />
-                {t('hero.cta')}
+                {t('cta')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="secondary" size="xl">
                 <Shield className="w-5 h-5" />
-                {t('hero.ctaSecondary')}
+                {t('ctaSecondary')}
               </Button>
             </div>
 

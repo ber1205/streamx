@@ -28,9 +28,9 @@ export function Navbar({ theme, onToggleTheme, onOpenAuth, isAuthenticated, user
   }, [])
 
   const navLinks = [
-    { href: '#features', label: t('nav.features') },
-    { href: '#platforms', label: t('nav.platforms') },
-    { href: '#pricing', label: t('nav.pricing') },
+    { href: '#features', label: t('features') },
+    { href: '#platforms', label: t('platforms') },
+    { href: '#pricing', label: t('pricing') },
   ]
 
   const toggleLang = () => {
@@ -127,16 +127,16 @@ export function Navbar({ theme, onToggleTheme, onOpenAuth, isAuthenticated, user
                   </Badge>
                   <Button variant="ghost" size="sm" onClick={onLogout}>
                     <LogOut className="w-4 h-4" />
-                    {t('nav.logout')}
+                    {t('logout')}
                   </Button>
                 </div>
               ) : (
                 <div className="hidden md:flex items-center gap-2">
                   <Button variant="ghost" size="sm" onClick={() => onOpenAuth('login')}>
-                    {t('nav.login')}
+                    {t('login')}
                   </Button>
                   <Button size="sm" onClick={() => onOpenAuth('register')}>
-                    {t('nav.register')}
+                    {t('register')}
                   </Button>
                 </div>
               )}
@@ -177,21 +177,21 @@ export function Navbar({ theme, onToggleTheme, onOpenAuth, isAuthenticated, user
                   {isAuthenticated ? (
                     <>
                       <div className="flex items-center justify-between px-4 py-2">
-                        <span className="text-sm text-text-secondary">{t('nav.credits')}</span>
+                        <span className="text-sm text-text-secondary">{t('credits')}</span>
                         <Badge variant="electric">{user?.credits || 0}</Badge>
                       </div>
                       <Button variant="ghost" size="sm" fullWidth onClick={onLogout}>
                         <LogOut className="w-4 h-4" />
-                        {t('nav.logout')}
+                        {t('logout')}
                       </Button>
                     </>
                   ) : (
                     <>
                       <Button variant="ghost" size="sm" fullWidth onClick={() => { onOpenAuth('login'); setMobileOpen(false) }}>
-                        {t('nav.login')}
+                        {t('login')}
                       </Button>
                       <Button size="sm" fullWidth onClick={() => { onOpenAuth('register'); setMobileOpen(false) }}>
-                        {t('nav.register')}
+                        {t('register')}
                       </Button>
                     </>
                   )}
