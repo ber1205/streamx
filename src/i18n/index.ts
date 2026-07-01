@@ -11,7 +11,7 @@ if (typeof localStorage !== 'undefined') {
   localStorage.setItem('streamx-lang', defaultLang)
 }
 
-const ns = ['common', 'nav', 'hero', 'parser', 'platforms', 'features', 'pricing', 'auth', 'footer']
+const ns = ['common', 'nav', 'hero', 'parser', 'platforms', 'features', 'pricing', 'cta', 'auth', 'footer']
 
 function buildResources(lang: typeof en) {
   const resources: Record<string, unknown> = {}

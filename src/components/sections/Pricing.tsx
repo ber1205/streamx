@@ -67,7 +67,7 @@ export function Pricing() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-text-primary">{t('paidUser.title')}</h3>
-                  <p className="text-sm text-text-secondary">From ¥3</p>
+                  <p className="text-sm text-text-secondary">{t('paidUser.from')}</p>
                 </div>
               </div>
               <ul className="space-y-3">

@@ -4,7 +4,7 @@ import { ArrowRight, Zap, Shield, Rocket } from 'lucide-react'
 import { Button } from '@/components/ui'
 
 export function CTA() {
-  const { t } = useTranslation(['hero', 'common'])
+  const { t } = useTranslation(['cta', 'hero'])
 
   return (
     <section className="relative py-24 px-4 sm:px-6 lg:px-8">
@@ -36,31 +36,29 @@ export function CTA() {
               className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6"
             >
               <Rocket className="w-4 h-4 text-electric" />
-              <span className="text-sm text-text-secondary">Powered by Cloudflare Edge Network</span>
+              <span className="text-sm text-text-secondary">{t('cta:badge')}</span>
             </motion.div>
 
             {/* Title */}
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">
-              <span className="text-text-primary">Ready to </span>
-              <span className="gradient-text-electric">download anything?</span>
+              <span className="gradient-text-electric">{t('cta:title')}</span>
             </h2>
 
             {/* Subtitle */}
             <p className="text-base md:text-lg text-text-secondary max-w-2xl mx-auto mb-8 text-balance">
-              Join StreamX today. Get 100 free credits on signup. No credit card required.
-              Parse and download from 50+ platforms with zero server storage.
+              {t('cta:subtitle')}
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="xl" className="group">
                 <Zap className="w-5 h-5" fill="white" />
-                {t('cta')}
+                {t('hero:cta')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="secondary" size="xl">
                 <Shield className="w-5 h-5" />
-                {t('ctaSecondary')}
+                {t('hero:ctaSecondary')}
               </Button>
             </div>
 
@@ -68,15 +66,15 @@ export function CTA() {
             <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-xs text-text-muted">
               <div className="flex items-center gap-1.5">
                 <Shield className="w-4 h-4" />
-                Zero server storage
+                {t('cta:trust1')}
               </div>
               <div className="flex items-center gap-1.5">
                 <Zap className="w-4 h-4" />
-                No credit card required
+                {t('cta:trust2')}
               </div>
               <div className="flex items-center gap-1.5">
                 <Rocket className="w-4 h-4" />
-                100 free credits on signup
+                {t('cta:trust3')}
               </div>
             </div>
           </div>

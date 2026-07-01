@@ -93,6 +93,7 @@
     },
     "paidUser": {
       "title": "Premium Features",
+      "from": "From",
       "features": [
         "4K Ultra HD download",
         "Batch download up to 50 URLs",
@@ -101,6 +102,14 @@
         "Cookie import for member content"
       ]
     }
+  },
+  "cta": {
+    "badge": "Powered by Cloudflare Edge Network",
+    "title": "Ready to download anything?",
+    "subtitle": "Join StreamX today. Get 100 free credits on signup. No credit card required. Parse and download from 50+ platforms with zero server storage.",
+    "trust1": "Zero server storage",
+    "trust2": "No credit card required",
+    "trust3": "100 free credits on signup"
   },
   "auth": {
     "login": {
