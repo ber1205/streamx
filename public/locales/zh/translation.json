@@ -44,6 +44,7 @@
     "mergeWarning": "本地合成中，请勿关闭或刷新页面",
     "mergeProgress": "合成进度",
     "insufficientCredits": "积分不足，本次操作需要 {{required}} 积分，当前余额：{{current}}",
+    "creditsSummary": "已使用 {{used}} 积分 · 剩余 {{remaining}} 积分",
     "error": {
       "invalidUrl": "请输入有效的链接",
       "parseFailed": "解析失败，积分已退还",
@@ -131,7 +132,9 @@
       "haveAccount": "已有账户？",
       "signIn": "登录",
       "submit": "注册",
-      "passwordHint": "8位以上，包含大小写字母和数字"
+      "passwordHint": "8位以上，包含大小写字母和数字",
+      "successTitle": "注册成功！",
+      "successMessage": "请检查您的邮箱以验证账户。"
     },
     "errors": {
       "emailInvalid": "请输入有效的邮箱地址",
@@ -153,7 +156,8 @@
     "terms": "服务条款",
     "apiDocs": "API 文档",
     "status": "服务状态",
-    "copyright": "© 2025 StreamX. 保留所有权利。"
+    "copyright": "© 2025 StreamX. 保留所有权利。",
+    "systemsOperational": "系统运行正常"
   },
   "common": {
     "loading": "加载中...",

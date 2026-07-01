@@ -4,8 +4,7 @@ import en from '../../public/locales/en/translation.json'
 import zh from '../../public/locales/zh/translation.json'
 
 const savedLang = typeof localStorage !== 'undefined' ? localStorage.getItem('streamx-lang') : null
-const browserLang = typeof navigator !== 'undefined' ? navigator.language : 'en'
-const defaultLang = savedLang || (browserLang.startsWith('zh') ? 'zh' : 'en')
+const defaultLang = savedLang || 'en'
 
 if (typeof localStorage !== 'undefined') {
   localStorage.setItem('streamx-lang', defaultLang)

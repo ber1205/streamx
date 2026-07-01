@@ -44,6 +44,7 @@
     "mergeWarning": "Local merge in progress, please do not close or refresh the page",
     "mergeProgress": "Merge Progress",
     "insufficientCredits": "Insufficient credits. This operation requires {{required}} credits, current balance: {{current}}",
+    "creditsSummary": "{{used}} credits used · {{remaining}} remaining",
     "error": {
       "invalidUrl": "Please enter a valid URL",
       "parseFailed": "Parse failed. Credits have been refunded.",
@@ -131,7 +132,9 @@
       "haveAccount": "Already have an account?",
       "signIn": "Sign in",
       "submit": "Create Account",
-      "passwordHint": "8+ characters with upper, lower, and number"
+      "passwordHint": "8+ characters with upper, lower, and number",
+      "successTitle": "Registration Successful!",
+      "successMessage": "Please check your email to verify your account."
     },
     "errors": {
       "emailInvalid": "Please enter a valid email",
@@ -153,7 +156,8 @@
     "terms": "Terms of Service",
     "apiDocs": "API Docs",
     "status": "Status",
-    "copyright": "© 2025 StreamX. All rights reserved."
+    "copyright": "© 2025 StreamX. All rights reserved.",
+    "systemsOperational": "All systems operational"
   },
   "common": {
     "loading": "Loading...",

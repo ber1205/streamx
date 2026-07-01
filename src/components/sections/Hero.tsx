@@ -460,7 +460,7 @@ function ParseResultDisplay({ result, onClose }: { result: ParseResult; onClose:
           <div className="flex items-center gap-2 text-sm">
             <CheckCircle2 className="w-4 h-4 text-success" />
             <span className="text-text-secondary">
-              {result.credits_deducted} credits used · {result.credits_remaining} remaining
+              {t('creditsSummary', { used: result.credits_deducted, remaining: result.credits_remaining })}
             </span>
           </div>
           <Button variant="ghost" size="sm" onClick={onClose}>

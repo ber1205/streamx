@@ -116,8 +116,8 @@ export function AuthModal({ open, mode, onClose, onSwitchMode, onLogin }: AuthMo
                   <div className="w-16 h-16 mx-auto rounded-full bg-success/20 flex items-center justify-center mb-4">
                     <Check className="w-8 h-8 text-success" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-primary mb-2">Registration Successful!</h3>
-                  <p className="text-sm text-text-secondary">Please check your email to verify your account.</p>
+                  <h3 className="text-xl font-bold text-text-primary mb-2">{t('register.successTitle')}</h3>
+                  <p className="text-sm text-text-secondary">{t('register.successMessage')}</p>
                 </motion.div>
               ) : (
                 <>
